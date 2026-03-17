@@ -1,0 +1,15 @@
+{
+  "name": "projeto-devops",
+  "version": "1.0.0",
+  "description": "This project was created as part of a hands-on DevOps webinar, demonstrating real-world DevOps practices including CI/CD pipelines, automated deployment, monitoring, and modern development workflows.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
