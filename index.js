@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('🚀 Aplicação rodando com DevOps!');
+  res.send('🚀 Aplicação rodando com DevOps! Deploy atualizado!');
 });
 
 app.get('/soma', (req, res) => {
