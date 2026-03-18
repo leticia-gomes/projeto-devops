@@ -1,18 +1,19 @@
 const express = require('express');
-
 const app = express();
+const soma = require('./soma');
 
 app.get('/', (req, res) => {
-  res.send('🚀 Aplicação rodando com DevOps! Deploy atualizado!');
+    res.send('🚀 Aplicação rodando com DevOps! Deploy atualizado!');
 });
 
 app.get('/soma', (req, res) => {
-  const { a, b } = req.query;
-  res.send(`Resultado: ${Number(a) + Number(b)}`);
+    const { a, b } = req.query;
+    const resultado = soma(Number(a), Number(b));
+    res.send(`Resultado: ${resultado}`);
 });
 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+    console.log(`Servidor rodando na porta ${PORT}`);
 });
