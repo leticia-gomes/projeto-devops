@@ -4,6 +4,7 @@
   "description": "This project was created as part of a hands-on DevOps webinar, demonstrating real-world DevOps practices including CI/CD pipelines, automated deployment, monitoring, and modern development workflows.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
   "keywords": [],
@@ -11,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^30.3.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
