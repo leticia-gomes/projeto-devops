@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.send('🚀 Aplicação rodando com DevOps! Deploy atualizado!');
 });
 
+app.get('/agradecimento', (req, res) => {
+    res.send('Obrigada por existir o webinar de DevOps - Profa. Letícia!');
+});
+
 app.get('/soma', (req, res) => {
     const { a, b } = req.query;
     const resultado = soma(Number(a), Number(b));
