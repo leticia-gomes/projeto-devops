@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/agradecimento', (req, res) => {
-    res.send('Obrigada por existir o webinar de DevOps - Profa. Letícia!');
+    res.send('Obrigada por assistir o webinar de DevOps - Profa. Letícia!');
 });
 
 app.get('/soma', (req, res) => {
